@@ -9,6 +9,7 @@ export const MacibasCardStyled = styledComponents.div`
     height: 70vh;
 
     margin: 10rem 0;
+    padding: 0 2rem;
     border-radius: 20px;
     box-shadow: 0 0 2px 2px;
 

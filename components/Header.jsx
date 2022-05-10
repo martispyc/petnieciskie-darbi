@@ -19,7 +19,7 @@ function Header({ title, back }) {
 
             <Title>{title}</Title>
 
-            <Author>Matīss Burmistrs</Author>
+            <Author>Matīss Burmistrs 10.D</Author>
         </Flex>
       </HeaderStyled>
   )

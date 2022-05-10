@@ -6,7 +6,7 @@ export const Page = styledComponents.div`
   padding: 1rem 2rem;
   margin: 3rem auto;
 
-  height: 1000rem;
+  min-height: 90vh;
 
   border: 3px black solid;
 `

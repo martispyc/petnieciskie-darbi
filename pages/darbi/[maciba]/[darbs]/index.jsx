@@ -1,22 +1,16 @@
 import ComponentList from "../../../../components/ComponentList";
 import Header from "../../../../components/Header";
-import {ScrollBox} from "../../../../components/styles/ScrollBox";
 import {Page} from "../../../../components/styles/Page";
 import {server} from "../../../../config";
-import {Flex} from '../../../../components/styles/Flex.styled'
 import {Container} from "../../../../components/styles/Container.styled"
 
 function Darbs({ darbs }) {
   return (
     <Container width="100vw" height="100vh">
-      <Flex direction="column">
-        <Header back="/darbi" title={darbs.nosaukums} />
-        <ScrollBox>
-          <Page>
-            <ComponentList components={darbs.components}/>
-          </Page>
-        </ScrollBox>
-      </Flex>
+      <Header position='sticky' back="/darbi" title={darbs.nosaukums} />
+      <Page>
+        <ComponentList components={darbs.components}/>
+      </Page>
     </Container>
   )
 }
