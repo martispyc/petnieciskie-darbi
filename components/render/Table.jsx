@@ -1,6 +1,6 @@
 import React from "react";
 import { TableStyled } from "./styles/TableStyled";
-
+import Equation from "./Equation";
 function Table({ data }) {
   let parse = (data) => {
     let new_data = [];
@@ -74,7 +74,11 @@ function Table({ data }) {
             <td key={i}>
               {" "}
               {col.map((node, j) => (
-                <span key={j}> {node} </span>
+                <span key={j}>
+                  <Equation>
+                    {node}
+                  </Equation>
+                </span>
               ))}{" "}
             </td>
           ))}{" "}

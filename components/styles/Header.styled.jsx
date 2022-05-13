@@ -11,6 +11,7 @@ export const HeaderStyled = styledComponents.header`
 
     position: sticky;
     top: 0px;
+    z-index: 1;
 `
 
 export const Title = styledComponents.h1`

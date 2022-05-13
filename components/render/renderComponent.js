@@ -1,8 +1,9 @@
 import { Title } from "./styles/Title";
-import { Text } from "./styles/Text";
+import Text from "./Text";
 import Table from "./Table";
 import UList from "./UList";
 import OList from "./OList";
+import Chart from "./Chart";
 import React from "react";
 
 const keyToComponentMap = {
@@ -11,6 +12,7 @@ const keyToComponentMap = {
   Table: Table,
   UList: UList,
   OList: OList,
+  Chart: Chart,
 };
 
 export const renderComponent = (config, key) => {

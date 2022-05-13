@@ -5,7 +5,7 @@ export const TableStyled = styledComponents.table`
     border-collapse: collapse;
     border: 2px solid #111;
     width: 100%;
-
+    
     span {
         border-top: 2px solid #111;
         &:first-child {
