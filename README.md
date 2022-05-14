@@ -1,3 +1,4 @@
 ## Pētnieciskie darbi fizikā online vidē
+
 <br>
-Veidots ar [Next.js](https://nextjs.org) un uzlikts uz [Vercel](https://vercel.org)
+Veidots ar <a href="https://nextjs.org" target="_top">Next.js</a> un uzlikts uz <a href="https://vercel.org" target="_top">VERCEL</a>
