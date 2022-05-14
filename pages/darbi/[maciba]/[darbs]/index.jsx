@@ -1,4 +1,5 @@
 import ComponentList from "../../../../components/ComponentList";
+import ProgressBar from "../../../../components/ProgressBar";
 import Header from "../../../../components/Header";
 import { Page } from "../../../../components/styles/Page";
 import { server } from "../../../../config";
@@ -8,10 +9,24 @@ import isEmpty from "lodash.isempty";
 function Darbs({ darbs, error }) {
   return (
     <Container width="100vw" height="100vh">
-      <Header position="sticky" back="/darbi" title={darbs.nosaukums} />{" "}
+      <Header position="sticky" back="/darbi" shadowSize={1} title={darbs.nosaukums}>
+        <ProgressBar/>
+      </Header>
       <Page>
-        {error && <p style={{ color: "red" }}>{error}</p>}
-        {!isEmpty(darbs.components) && <ComponentList components={darbs.components} />}
+        {" "}
+        {error && (
+          <p
+            style={{
+              color: "red",
+            }}
+          >
+            {" "}
+            {error}{" "}
+          </p>
+        )}{" "}
+        {!isEmpty(darbs.components) && (
+          <ComponentList components={darbs.components} />
+        )}{" "}
       </Page>{" "}
     </Container>
   );
@@ -19,7 +34,7 @@ function Darbs({ darbs, error }) {
 
 export const getStaticProps = async (context) => {
   let darbs = [];
-  let error = ""
+  let error = "";
   try {
     const res = await fetch(
       `${server}/api/macibas/${context.params.maciba}/${context.params.darbs}`,
@@ -95,4 +110,3 @@ export const getStaticPaths = async () => {
   };
 };
 export default Darbs;
-;

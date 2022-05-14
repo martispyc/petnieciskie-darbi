@@ -4,15 +4,15 @@ import {Button} from './styles/Button.styled'
 import {useTheme} from 'styled-components'
 import Link from 'next/link'
 
-function Header({ title, back }) {
+function Header({ title, back, children, shadowSize }) {
   const theme = useTheme()
 
   return (
-      <HeaderStyled>
+      <HeaderStyled shadowSize={shadowSize}>
         <Flex>
             <Link href={back}>
               <a>
-                <Button bg={theme.colors.tertiaryHalf} borderColor={theme.colors.tertiary} color={theme.colors.tertiary}>Atpakaļ</Button>
+                <Button bg={theme.colors.tertiaryHalf} borderColor={theme.colors.tertiary}  color={theme.colors.tertiary}>Atpakaļ</Button>
               </a>
             </Link>
 
@@ -21,6 +21,7 @@ function Header({ title, back }) {
 
             <Author>Matīss Burmistrs 10.D</Author>
         </Flex>
+        {children}
       </HeaderStyled>
   )
 }

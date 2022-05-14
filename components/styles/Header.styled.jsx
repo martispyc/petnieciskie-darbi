@@ -7,7 +7,8 @@ export const HeaderStyled = styledComponents.header`
     background-color: ${({theme}) => theme.colors.gray};
 
     padding: 0 0;
-    box-shadow: 0 0 2px 2px;
+    ${({shadowSize}) => shadowSize===0? "": "box-shadow: 0 0 2px "+(shadowSize || 2)+"px;"}
+    
 
     position: sticky;
     top: 0px;
