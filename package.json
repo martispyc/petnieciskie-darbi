@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "better-react-mathjax": "^2.0.1",
+    "lodash.isempty": "^4.4.0",
     "next": "12.1.5",
+    "next-absolute-url": "^1.2.2",
     "react-linkify": "^1.0.0-alpha",
     "recharts": "^2.1.9",
     "styled-components": "^5.3.5"
