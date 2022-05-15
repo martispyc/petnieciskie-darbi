@@ -1,4 +1,4 @@
-import { Title } from "./styles/Title";
+import { Title, Title2 } from "./styles/Title";
 import Text from "./Text";
 import Table from "./Table";
 import UList from "./UList";
@@ -8,6 +8,7 @@ import React from "react";
 
 const keyToComponentMap = {
   Title: Title,
+  Title2: Title2,
   Text: Text,
   Table: Table,
   UList: UList,
