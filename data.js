@@ -1,5 +1,7 @@
 // TODO: add y axis label to chart
+// TODO: katrai tabulai pielikt punktu pie katra npk skatila.
 // TODO: make the a tag look better in the 'Text AC
+// TODO: visas relatīvās kļūdas parveidot par R ?
 export const macibas = [
     {
         id: 0,
@@ -215,8 +217,189 @@ export const macibas = [
                 ]
             },
             {
+                id: 2,
+                nosaukums: "Savas jaudas noteikšana. Nr. 2",
+                components: [
+                    {
+                        type: "Text",
+                        children: "Uzdevums: Nosaki savu atttīstīto jaudu, kāpjot pa kāpnēm lēni, ātrāk un ļoti ātri."
+                    },
+                    {
+                        type: "Title",
+                        children: "Hipotēze"
+                    },
+                    {
+                        type: "Text",
+                        children: "Pieaugot laikam, pamazinās jauda."
+                    },
+                    {
+                        type: "Title",
+                        children: "Lielumi"
+                    },
+                    {
+                        type: "UList",
+                        props: {
+                            data: [
+                                "Neatkarīgais: Laiks `(t)`",
+                                "Atkarīgais: Jauda `(P)`",
+                                "Nemainīgie: Cilvēka masa `(m)`, Kāpņu augstums `(h)`",
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Darba piederumi"
+                    },
+                    {
+                        type: "UList",
+                        props: {
+                            data: [
+                                "Mērlents (iedeļas vērtība `0.001m`, mērapjoms `3m`)",
+                                "Hronometrs (iedeļas vērtība `0.01s`)",
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Darba gaita"
+                    },
+                    {
+                        type: "OList",
+                        props: {
+                            data: [
+                                "Ar sarvu palīdzību noteikt cilvēka masu `kg`.",
+                                "Izmērīt kāpņu augstumu `h`.",
+                                "Pārvieotjoties no sākumpunktu līdz galapunktam nomērīt laiku  `(t)`.",
+                                "Uz papīra noteikto laiku `(t)` pierakstīt, ievērojot pareizo mērvienību un ievērojot, ka laiks ir bāzes-60 skaitlis!",
+                                "Aprēķināt jaudu `(P)`, izmantojot formulu: `P=(mgh)/t`.",
+                                "Sekot 2. punktam katru 5. reizi un katru reizi sekot 3.-5.",
+                                "Aprēķināt vidējo jaudu `P_(vid.)`!",
+                                "Grafiski attēlot vidējās pieliktās jaudas atkarību no vidējā uzkāpšanas laika no katras tabulas!"
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Iegūto datu reģistrēšana un apstrāde",
+                    },
+                    {
+                        type: "Title2",
+                        children: "(Kāpt pa 1 kāpnei)",
+                    },
+                    {
+                        type: "Table",
+                        props: {
+                            data: [
+                                ["Npk.", 1,2,3,4,5],
+                                ["`m, kg`", "66"],
+                                ["`h, m`", "2.38"],
+                                ["`t, s`", "6.25", "6.50", "6.53", "6.88", "6.06"],
+                                ["'`P, W`", "((nums[2][1]*nums[3][1]*10)/nums[4][i]).toFixed(2)"],
+                                ["*`P_(vid.), W`", "(sums[5]/(nums[5].length-1)).toFixed(2)"],
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title2",
+                        children: "(Kāpt pa 2 kāpnēm)",
+                    },
+                    {
+                        type: "Table",
+                        props: {
+                            data: [
+                                ["Npk.", 1,2,3,4,5],
+                                ["`m, kg`", "66"],
+                                ["`h, m`", "2.38"],
+                                ["`t, s`", "2.72", "2.47", "2.59", "2.66", "2.44"],
+                                ["'`P, W`", "((nums[2][1]*nums[3][1]*10)/nums[4][i]).toFixed(2)"],
+                                ["*`P_(vid.), W`", "(sums[5]/(nums[5].length-1)).toFixed(2)"],
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title2",
+                        children: "(Kāpt pa 3 kāpnēm)",
+                    },
+                    {
+                        type: "Table",
+                        props: {
+                            data: [
+                                ["Npk.", 1,2,3,4,5],
+                                ["`m, kg`", "66"],
+                                ["`h, m`", "2.38"],
+                                ["`t, s`",  "1.53", "1.41", "1.46", "1.41", "1.53"],
+                                ["'`P, W`", "((nums[2][1]*nums[3][1]*10)/nums[4][i]).toFixed(2)"],
+                                ["*`P_(vid.), W`", "(sums[5]/(nums[5].length-1)).toFixed(2)"],
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Vidējā laika atkarība no vidējās jaudas"
+                    },
+                    {
+                        type: "Chart",
+                        props: {
+                            info: {
+                                title: "Vidējā laika atkarība no vidējās jaudas",
+                                x: "t, s", 
+                                y: "P, W"
+                            },
+                            data: [
+                                ["Laiks uzkāpšanas", 0,1.47, 2.58, 6.44],
+                                ["Pieliktā jauda", 0,1071.46, 610.85, 244.21],
+                            ]
+                        }
+                    },
+                    {
+                        type: "Text",
+                        props: {
+                            text: [
+                                "Aprēķinu piemēri:",
+                                "`P_(1_1)=(mgh)/t_(1_1)=(66*10*2.38)/6.25=251.33W`",
+                                "`(P_(vid.))_1=1/nsum_(i=1)^nP_(1_i)=1/5*sum_(i=1)^5P_(1_i)=244.21W`",
+                                "`(DeltaP)_(1_1)=P_(1_1)-(P_(vid.))_1=251.33-244.21=7.12W`",
+                                "`DeltaP_1=1/nsum_(i=1)^nDeltaP_(1_i)=1/5*sum_(i=1)^5DeltaP_(1_i)=8.84W`",
+                                "`R_1=(DeltaP_1)/(P_(vid.))_1=8.84/244.21=0.036=3.6%`"
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title2",
+                        children: "Rezultāti"
+                    },
+                    {
+                        type: "Text",
+                        props: {
+                            text: [
+                                "`P_1+-DeltaP_1=(244.21+-8.84) W, R=3.6%`",
+                                "`P_2+-DeltaP_2=(610.85+-23.21) W, R=3.8%`",
+                                "`P_3+-DeltaP_3=(1071.46+-35.83) W, R=3.3%`",
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Secinājumi"
+                    },
+                    {
+                        type: "Text",
+                        props: {
+                            text: [
+                                "1. Kurā gadījumā ir attīstīta lielāka jauda? Pamato.",
+                                "Lielāka jauda ir attīstīta, kad laiks ir mazāks. To var apskatīt ari formulā `P=(mgh)/t`, kur var redzēt, ka pamazinot `t`, palielinās `1/t`. Dēļ šī secinājuma var apstiprināt tabulā rakstīto, ka vismazākam laikam ir vislielākā jauda.",
+                                "2. Salīdzini savu jaudi ar tabulā (https://ibb.co/QP3tF0C) dotajām vērtībām no cilvēka darbības veida.",
+                                "Interesanti, ka strādājot fizksu darbu līdzas kāpņu kāpšanai, bet ātrā pārvietošanās ar lieliem soļiem ir jaudīgāks nekā skrienot pa kāpnēm ar 1 pakāpiena atstarpi. Vidēji ātra kāpņu kāpšana līdzas arī ātrai soļošanai, drusku pārspēj to.",
+                                "3. Secinājumi.",
+                                "Tabulā var redzēt, ka hipotēze apstiprinās un, ka jauda ir lielāka, jo laiks ir mazāks. Skrienot jauda ir liela, kas ved uz nogurumu, bet ejot nogurums nav tik liels, jo jauda nav tik liela, dēļ tā, ka distance tika veikta lēnāk nekā skrienot. Tabulā nav pilnīgi dilstoša līnija, bet tas ir tikai dēļ fakta, ka tika izmantoti tikai 3 mērījumi un apskatot ļoti maza laika vērtību varētu redzēt, ka jauda būs ļoti liela. To var arī redzēt formlulā `P=(mgh)/t`, kur kā jau minēju iepriekš, `t` pamazinoties, palielinās `1/t`. Šis tika praktiski pierādīts ar mazām `t` vērtībam: https://www.popsci.com/science/article/2013-07/physics-record-breaking-run/. Te var apskatīt, ka pasaules rekordā skriešanā, tika pielietoti `2619W`, kurā protams bija iesaistītas mazas `t` vērtības."
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
                 id: 5,
-                nosaukums: "Slīdes berzes spēks. Slīdes berzeas koeficinets. Nr.5",
+                nosaukums: "Slīdes berzes spēks. Slīdes berzes koeficinets. Nr.5",
                 components: [
                     {
                         type: "Title",
@@ -275,9 +458,9 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Sakarā ar to, ka palielinās masa `[kg]`, palielinās arī `mg` (masa * brīvās krišanas pātrinājums). Zinot, ka `F_r=mg` un `F_b=muF_r=mumgcosalpha`, kur `mu` ir `const` un `g` uz zemes arī ir `const`, un `cosalpha` ir `const`, tad sanāk:",
-                                "`F_b = ({const})*m*({const})*({const})`",
-                                "Var secināt, ka `F_b` ir atkarīgs no `m`, jeb- klucīša berzes spēks atkarīgs no masas."
+                                "Sakarā ar to, ka palielinās masa `[kg]`, palielinās arī `mg` (masa * brīvās krišanas pātrinājums). Zinot, ka `F_r=mg` un `F_b=muF_r=mumgcosalpha`, kur `mu` - berzes koeficients ir nemainīgs un `g` - gravitācijas spēks uz zemes ir `const`, `m` - masa.",
+                                // "`F_b = ({const})*m*({const})*({const})`",
+                                // "Var secināt, ka `F_b` ir atkarīgs no `m`, jeb- klucīša berzes spēks atkarīgs no masas."
                             ]
                         }
                     },
@@ -567,7 +750,7 @@ export const macibas = [
                                 "`(Deltaeta)/0.34=0.05/1.70+0.001/0.08+0.05/0.8+0.001/0.5=>`",
                                 "`Deltaeta=0.34*0.106=0.036`",
                                 "`r=(Deltaeta)/eta_(vid.)=0.036/0.441=0.081=8.1%`",
-                                "Rezultāts: `eta=(0.340+-0.081), r=81.%`"
+                                "Rezultāts: `eta=(0.340+-0.081), r=8.1%`"
                             ]
                         }
                     },
@@ -618,7 +801,7 @@ export const macibas = [
             },
             {
                 id: 7,
-                nosaukums: "Diega jeb matmātiskais svārsts. Nr. 7",
+                nosaukums: "Diega jeb matemātiskais svārsts. Nr. 7",
                 components: [
                     {
                         type: "Title",
@@ -640,8 +823,123 @@ export const macibas = [
                         children: "Hipotēze"
                     },
                     {
-
-                    }
+                        type: "Text",
+                        children: "aaa"
+                    },
+                    {
+                        type: "Title",
+                        children: "Lielumi"
+                    },
+                    {
+                        type: "UList",
+                        props: {
+                            data: [
+                                "Neatkarīgais: ",
+                                "Atkarīgais: ",
+                                "Konstantais: ",
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Darba piederumi"
+                    },
+                    {
+                        type: "UList",
+                        props: {
+                            data: [
+                                "Lineāls (iedeļas vērtība `0.1cm`, mērapjoms `100cm`)",
+                                "Hronometrs (iedeļas vērtība `0.01s`)",
+                                "Bumbiņa",
+                                "Statīvs",
+                                "Striķis",
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Teorētiskais pamatojums"
+                    },
+                    {
+                        type: "Text",
+                        props: {
+                            text: [
+                                ""
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Mērskaitļu tabula un aprēķina piemērs:"
+                    },
+                    {
+                        type: "Table",
+                        props: {
+                            data: [
+                                ["Npk.", 1,2,3,4,5,6,7,8,9,10]
+                            ]
+                        }
+                    },
+                    {
+                        type: "Text",
+                        props: {
+                            data: [
+                                ""
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title2",
+                        children: "rezultāti"
+                    },
+                    {
+                        type: "Text",
+                        props: {
+                            data: [
+                                ""
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Secinājumi un darba anlīze"
+                    },
+                    {
+                        type: "Title",
+                        children: "Rezultātu analīze"
+                    },
+                    {
+                        type: "Text",
+                        props: {
+                            data: [
+                                ""
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Eksperimenta izvērtēšana"
+                    },
+                    {
+                        type: "Text",
+                        props: {
+                            data: [
+                                ""
+                            ]
+                        }
+                    },
+                    {
+                        type: "Title",
+                        children: "Secinājumi"
+                    },
+                    {
+                        type: "Text",
+                        props: {
+                            data: [
+                                ""
+                            ]
+                        }
+                    },
                 ]
             },
             {
