@@ -39,7 +39,7 @@ function Chart({ data, info }) {
 
   return (
     <ChartContainer>
-      <ResponsiveContainer width="100%" height={600}>
+      <ResponsiveContainer width="100%" height={500}>
         <LineChart
           width={500}
           height={300}
