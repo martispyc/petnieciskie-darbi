@@ -2,7 +2,7 @@ import styledComponents from "styled-components";
 
 export const HeaderStyled = styledComponents.header`
     width: 100%;
-    height: 8rem;
+    height: fit-content;
 
     background-color: ${({theme}) => theme.colors.gray};
 
@@ -13,10 +13,22 @@ export const HeaderStyled = styledComponents.header`
     position: sticky;
     top: 0px;
     z-index: 1;
+
+    * {
+        text-align: center;
+    }
+
+    // @media (max-width: 1600px) {
+    //     h1 {
+    //         font-size: 6em;
+    //     }
+    // }
+
 `
 
 export const Title = styledComponents.h1`
     font-size: 5rem;
+    margin: 0;
 `
 
 export const Author = styledComponents.h2`

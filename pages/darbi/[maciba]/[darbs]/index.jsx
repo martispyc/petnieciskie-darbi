@@ -9,7 +9,7 @@ import isEmpty from "lodash.isempty";
 function Darbs({ darbs, error }) {
   return (
     <Container width="100vw" height="100vh">
-      <Header position="sticky" back="/darbi" shadowSize={1} title={darbs.nosaukums}>
+      <Header position="sticky" back="/darbi" shadowSize={0} title={darbs.nosaukums}>
         <ProgressBar/>
       </Header>
       <Page>

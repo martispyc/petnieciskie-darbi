@@ -14,7 +14,7 @@ function MacibasCard({ maciba }) {
           as={`/darbi/${maciba.macibasNosaukums}/${darbs.nosaukums}`}
         >
           <a>
-            <Button size={2}>{darbs.nosaukums}</Button>
+            <Button width={50} size={2}>{darbs.nosaukums}</Button>
           </a>
         </Link>
       ))}

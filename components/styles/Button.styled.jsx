@@ -10,6 +10,7 @@ export const Button = styledComponents.button`
   background-color: ${({ bg }) => bg || '#fff'};
   color: ${({ color }) => color || '#333'};
   border: ${props => (props.borderColor && '3') || '0'}px  solid  ${props => props.borderColor || 'black'};
+  width: ${({width}) => width+"rem" || 'auto'};
   
   &:hover {
     opacity: 0.9;

@@ -158,7 +158,7 @@ export const macibas = [
                                 ["`rho_0, (kg)/m^3`", "1000"],
                                 ["'`rho, (kg)/m^3`", "(nums[2][i]*nums[4][1]/(nums[2][i]-nums[3][i])).toFixed(0)"],
                                 ["*`rho_(vid.), (kg)/m^3`", "(sums[5]/(nums[5].length-1)).toFixed(0)"],
-                                ["'`Deltarho, (kg)/m^3`", "nums[5][i]-nums[6][1]"],
+                                ["'`Deltarho, (kg)/m^3`", "Math.abs(nums[5][i]-nums[6][1])"],
                                 ["'`(Deltarho)^2, (kg^2)/m^6`", "(nums[5][i]-nums[6][1])**2"],
                             ]
                         }
@@ -173,7 +173,7 @@ export const macibas = [
                             text: [
                                 "`rho=(F_(1_1)rho_0)/(F_(1_1)-F_(2_1))=(0.84*1000)/(0.84-0.48)=2333(kg)`",
                                 "`rho_(vid.)=1/n*sum_(i=1)^nrho_i=1/5*sum_(i=1)^5rho_i=2447(kg)/m^3`",
-                                "`Deltarho_1=rho_1-rho_(vid.)=2333-2447=-114(kg)/m^3`",
+                                "`Deltarho_1=|rho_1-rho_(vid.)|=|2333-2447|=114(kg)/m^3`",
                                 "`(Deltarho)_1^2=(-114)^2=12996(kg^2)/m^6`",
                                 "`Deltarho=tsqrt((sumDeltarho_i^2)/(n(n-1)))=2.776*48.47=134.6(kg)/m^3`",
                                 "`r=(Deltarho)/rho_(vid.)=134.6/2447=0.055=5.5%`",
@@ -389,7 +389,7 @@ export const macibas = [
                                 "1. Kurā gadījumā ir attīstīta lielāka jauda? Pamato.",
                                 "Lielāka jauda ir attīstīta, kad laiks ir mazāks. To var apskatīt ari formulā `P=(mgh)/t`, kur var redzēt, ka pamazinot `t`, palielinās `1/t`. Dēļ šī secinājuma var apstiprināt tabulā rakstīto, ka vismazākam laikam ir vislielākā jauda.",
                                 "2. Salīdzini savu jaudi ar tabulā (https://ibb.co/QP3tF0C) dotajām vērtībām no cilvēka darbības veida.",
-                                "Interesanti, ka strādājot fizksu darbu līdzas kāpņu kāpšanai, bet ātrā pārvietošanās ar lieliem soļiem ir jaudīgāks nekā skrienot pa kāpnēm ar 1 pakāpiena atstarpi. Vidēji ātra kāpņu kāpšana līdzas arī ātrai soļošanai, drusku pārspēj to.",
+                                "Interesanti, ka strādājot fizisku darbu līdzas kāpņu kāpšanai, bet ātrā pārvietošanās ar lieliem soļiem ir jaudīgāks nekā skrienot pa kāpnēm ar 1 pakāpiena atstarpi. Vidēji ātra kāpņu kāpšana līdzas arī ātrai soļošanai, drusku pārspēj to.",
                                 "3. Secinājumi.",
                                 "Tabulā var redzēt, ka hipotēze apstiprinās un, ka jauda ir lielāka, jo laiks ir mazāks. Skrienot jauda ir liela, kas ved uz nogurumu, bet ejot nogurums nav tik liels, jo jauda nav tik liela, dēļ tā, ka distance tika veikta lēnāk nekā skrienot. Tabulā nav pilnīgi dilstoša līnija, bet tas ir tikai dēļ fakta, ka tika izmantoti tikai 3 mērījumi un apskatot ļoti maza laika vērtību varētu redzēt, ka jauda būs ļoti liela. To var arī redzēt formlulā `P=(mgh)/t`, kur kā jau minēju iepriekš, `t` pamazinoties, palielinās `1/t`. Šis tika praktiski pierādīts ar mazām `t` vērtībam: https://www.popsci.com/science/article/2013-07/physics-record-breaking-run/. Te var apskatīt, ka pasaules rekordā skriešanā, tika pielietoti `2619W`, kurā protams bija iesaistītas mazas `t` vērtības."
                             ]
@@ -824,7 +824,7 @@ export const macibas = [
                     },
                     {
                         type: "Text",
-                        children: "aaa"
+                        children: "Palielinot svārsta garumu, palielināsies svārstības periods."
                     },
                     {
                         type: "Title",
@@ -834,9 +834,9 @@ export const macibas = [
                         type: "UList",
                         props: {
                             data: [
-                                "Neatkarīgais: ",
-                                "Atkarīgais: ",
-                                "Konstantais: ",
+                                "Neatkarīgais: Garums `(l)`",
+                                "Atkarīgais: Laiks `(t)`, Deiga periods `(T)`",
+                                "Konstantais: Brīvās krišanas paātrinājums `(g)`",
                             ]
                         }
                     },
@@ -864,41 +864,70 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                ""
+                                "Diega svārsta jeb matemātiskā svārsta svārstību periods ir atkarīgs tikai no svārsta garuma `l` un brīvās krišanas paātrinājuma `g`. Jo garāks svārsts, jo lielāks ir svārstību periods. Svārstību periodu aprēķina pēc formulas: ",
+                                "`T=2pisqrt(l/g)`. tātad lai nopteiktu `g`, var pārveidot vienādojumu par; `g=l((2pi)/T)^2`."
                             ]
                         }
                     },
                     {
                         type: "Title",
-                        children: "Mērskaitļu tabula un aprēķina piemērs:"
+                        children: "Mērskaitļu tabula un aprēķina piemērs"
                     },
                     {
                         type: "Table",
                         props: {
                             data: [
-                                ["Npk.", 1,2,3,4,5,6,7,8,9,10]
-                            ]
-                        }
-                    },
-                    {
-                        type: "Text",
-                        props: {
-                            data: [
-                                ""
+                                ["Npk.", 1,2,3,4,5,6,7,8,9,10],
+                                ["`n`", "10"],
+                                ["`l+-Deltal, cm`", "15.5`+-`0.1", "21.0", "24.5", "27.0", "30.0", "33.0", "36.0", "39.0", "42.0", "45.0"],
+                                ["`t+-Deltat, s`", "8.03`+-`0.01", "9.57", "10.25", "10.94", "11.44", "11.91", "12.32", "12.64", "13.21", "13.60"],
+                                ["'`T, s`", "(nums[4][i]/nums[2][1]).toFixed(3)"],
+                                ["'`T^2, s^2`", "(nums[5][i]**2).toFixed(3)"],
+                                ["'`g, m/s^2`", "(0.01*nums[3][i]*(2*Math.PI/nums[5][i])**2).toFixed(2)"],
+                                ["*`g_(vid.)+-Deltag, m/s^2`", "(sums[7]/(nums[7].length-1)).toFixed(2)+'`+-`'+0.22"],
                             ]
                         }
                     },
                     {
                         type: "Title2",
-                        children: "rezultāti"
+                        children: "Svārstību periods atkarībā no svārsta garuma"
+                    },
+                    {
+                        type: "Chart",
+                        props: {
+                            info: {
+                                title: "Svārstību periods atkarībā no svārsta garuma",
+                                x: "l, m", 
+                                y: "T, s"
+                            },
+                            data: [
+                                ["Svārsta garums", 0, "15.5", "21.0", "24.5", "27.0", "30.0", "33.0", "36.0", "39.0", "42.0", "45.0"],
+                                ["Svārstību periods", 0, 0.803, 0.957, 1.025, 1.094, 1.144, 1.191, 1.232, 1.264, 1.321, 1.360],
+                            ]
+                        }
                     },
                     {
                         type: "Text",
                         props: {
-                            data: [
-                                ""
+                            text: [
+                                "Aprēķina piemērs",
+                                "`T_1=t_1/n=8.03/10=0.803s`",
+                                "`T_1^2=0.803*0.803=0.645s^2`",
+                                "`g=l((2pi)/T)^2=0.155*((2*3.14)/0.803)^2=9.49m/s^2`",
+                                "`g_(vid.)=1/n*sum_(i=1)^ng_i=1/10*sum_(i=1)^10g_i=9.30m/s^2`",
+                                "`Deltag_1=|g_(vid.)-g_1|=|9.30-9.49|=0.19m/s^2`",
+                                "`Deltag=1/n*sum_(i=1)^nDeltag_i=1/10*sum_(i=1)^10Deltag_i=0.22m/s^2`",
+                                "`r=(Deltag)/g_(vid.)=0.22/9.30=0.024=2.4%`"
                             ]
                         }
+                    },
+                    {
+                        type: "Title2",
+                        children: "Rezultāti"
+                    },
+                    {
+                        type: "Text",
+                        children: "`g+-Deltag=(9.30+-0.22)m/s^2; r=2.4%`"
                     },
                     {
                         type: "Title",
@@ -911,8 +940,10 @@ export const macibas = [
                     {
                         type: "Text",
                         props: {
-                            data: [
-                                ""
+                            text: [
+                                "Dēļ `r<50%`, rezultāti ir ticami sanākuši un salīdzinot ar interneta resursiem:",
+                                "https://en.wikipedia.org/wiki/Gravitational_acceleration",
+                                "Var sekojoši redzēt tabulā, ka zemes `g` vertība ir `9.81m/s^2`, kur man sanāca, `g` vērtīa `9.30m/s^2`, kas Kairā būtu salīzinoši tuvu `(g=9.79m/s^2)`."
                             ]
                         }
                     },
@@ -923,8 +954,9 @@ export const macibas = [
                     {
                         type: "Text",
                         props: {
-                            data: [
-                                ""
+                            text: [
+                                "Eksperimentā nebija daudz trūkumu, bet liels trūkums bija koncentrānticja pie svārstību skaita noteikšanas. Rīki ar kuriem vajadzēja mērīt bija lieliski. Lai uzlabotu koncentrēšanos, ir atkarīgs no cilvēka paša.",
+                                "Lai uzlabotu cilvēka koncentrācijas laiku ir ieteicams meditēt un lasīt grāmatas, sekojot šim rakstam: https://healthcaremba.gwu.edu/blog/how-to-increase-attention-span/"
                             ]
                         }
                     },
@@ -935,11 +967,11 @@ export const macibas = [
                     {
                         type: "Text",
                         props: {
-                            data: [
-                                ""
+                            text: [
+                                "Hipotēze ir apstirpinājusies, to var saredzēt grafikā un tabulā. Kamēŗ aug garums, tikmēr pieaug arī periods. Tas arī apstirpinās teorētiski pēc formulas `T=2pisqrt(l/g)`, kur var redzēt, ka `l` attīecīgi maina `T`, ņemot pie tam vērā, ka `pi` un `g` ir konstantas vērtības mūsu apstākļos uz zemes. Toties melnajā carumā `(gapprox10^10)`, `sqrt(l/g)`, pat `l` ļoti lieliem lielumiem daudz nemainīs momentu, tātad teorētiski hipotēze priekš cilvēka acs būtu grūti saskatāma uz objektā kā melnais caurums, savukārt uz zemes viegli saskatāma.",
                             ]
                         }
-                    },
+                    }
                 ]
             },
             {
@@ -993,7 +1025,7 @@ export const macibas = [
                         type: "UList",
                         props: {
                             data: [
-                                "Neatkarīgais: Atsveru masa `[g]`",
+                                "Neatkarīgais: Atsvaru masa `[g]`",
                                 "Atkarīgas: Atsperes pagarinājums `[cm]`",
                                 "Nemainīgais: Stinguma koeficients"
                             ]
@@ -1166,7 +1198,7 @@ export const macibas = [
                     },
                     {
                         type: "Text",
-                        children: "Hipotēze apstiprinājās, smaguma spēka dēļ, pagarunājums palielinājāš, bet stinguma koeficents palika vienmērīgs `(~17)`. Kā jau visur, mes nēesam pārliecināti, kas notiekas, ja paliena `mg` uz melno caurumu izmēriem. Toties šim es pēc ilgas meklēšanas arī atradu rakstu (nav tieši par melniem caurumiem): https://physics.princeton.edu/~mcdonald/examples/stiffness.pdf, bet pēc idziļināšanās, sapratu, ka neko nesaprotu."
+                        children: "Hipotēze apstiprinājās, smaguma spēka dēļ, pagarunājums palielinājāš, bet stinguma koeficents palika vienmērīgs `(~17)`. Kā jau visur, mes nēesam pārliecināti, kas notiekas, ja paliena `mg` uz melno caurumu izmēriem. Toties šim es pēc ilgas meklēšanas arī atradu rakstu (nav tieši par melniem caurumiem): https://physics.princeton.edu/~mcdonald/examples/stiffness.pdf."
                     }
                 ]
             }

@@ -37,4 +37,25 @@ export const MainContainer = styledComponents.div`
 
     flex-direction: column;
     align-items: center;
+    
+    // @media (max-width: 1768px) {
+    //     h1 {
+    //         font-size: 10rem;
+    //     }
+    //     h3 {
+    //         font-size: 3rem;
+    //     }
+    //     Button {
+    //         font-size: 4rem;
+    //     }
+    // }
+
+    // @media (max-width: 934px) {
+    //     h1 {
+    //         font-size: 7rem;
+    //     }
+    //     Button {
+    //         font-size: 3rem;
+    //     }
+    // }
 `
