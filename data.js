@@ -1,5 +1,3 @@
-// TODO: add y axis label to chart
-// TODO: katrai tabulai pielikt punktu pie katra npk skatila.
 export const macibas = [
     {
         id: 0,

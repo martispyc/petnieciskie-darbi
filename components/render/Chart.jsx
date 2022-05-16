@@ -1,6 +1,7 @@
 import React from "react";
 import { ChartContainer } from "./styles/ChartContainer.styled";
 import {
+  Label,
   LineChart,
   Line,
   XAxis,
@@ -65,7 +66,8 @@ function Chart({ data, info }) {
               position: "insideTop",
               offset: -50,
             }}
-          />
+          >
+          </YAxis>
           <Tooltip 
             label={data[0][0]}
             labelFormatter={name => data[0][0]+": "+name}
