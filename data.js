@@ -1,7 +1,5 @@
 // TODO: add y axis label to chart
 // TODO: katrai tabulai pielikt punktu pie katra npk skatila.
-// TODO: make the a tag look better in the 'Text AC
-// TODO: visas relatīvās kļūdas parveidot par R ?
 export const macibas = [
     {
         id: 0,
@@ -15,7 +13,7 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Ir zināms, ka no viena un to paša materiāla var izgatavot dažādas formas ķermeņus.",
+                                "Ir zināms, ka no viena un tā paša materiāla var izgatavot dažādas formas ķermeņus.",
                                 "Problēma: vai vielas blīvums ir atkarīgs no ķermeņa formas?"
                             ]
                         }   
@@ -187,7 +185,7 @@ export const macibas = [
                     },
                     {
                         type: "Text",
-                        children: "Rezultāti ir pagūti ticami. `r<50%` izpidlas abos gadījumos, kas apzīmē tos ticamus. `r` abos eksperimentos bija līdzīgs, bet 1. eksperimentā tā bija mazāka. Izlasot šo rakstu: https://matmatch.com/learn/property/density-of-wood, var spriest, ka izmētais tilpums `(V)` bija ptiess, jo rakstā ir rakstīts, ka koka blīvums ir `~0.65`. Iegūtais blīvums `(0.605)` ir salīdzinoši līdzīgs, protams, blīvums arī ir atkarīgs no koka veida, tādēļ ir atkarīga arī koka suga. Ņemot vērā arī eskperimenta vienkāršumu un formulas iemācīšanos jau pamatskolā kļūdas pieļaušana eksperimenta procesā būtu grūta."
+                        children: "Rezultāti ir pagūti ticami. `r<50%` izpildas abos gadījumos, kas apzīmē tos ticamus. `r` abos eksperimentos bija līdzīgs, bet 1. eksperimentā tā bija mazāka. Izlasot šo rakstu: https://matmatch.com/learn/property/density-of-wood, var spriest, ka izmērĪtais tilpums `(V)` bija patiess, jo rakstā ir rakstīts, ka koka blīvums ir `~0.65`. Iegūtais blīvums `(0.605)` ir salīdzinoši līdzīgs, protams, blīvums arī ir atkarīgs no koka veida, tādēļ ir atkarīga arī koka suga. Ņemot vērā arī eskperimenta vienkāršumu un formulas iemācīšanos jau pamatskolā, kļūdas pieļaušana eksperimenta procesā būtu grūta."
                     },
                     {
                         type: "Title",
@@ -197,8 +195,8 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Eksperimentu bija viegli viegli veikt, jo tas bija salīdzinoši vienkāršs ar citiem. Veinīgais, kas bija ierobežojums bija rēķināšanas daudzums.",
-                                "Bija daudz jārēķina ar roku, kas 2. eksperimentā ved pie daudz kļūdām. Šo nevar uzlabot ar rēķināmo daudzumu, jo jau tā ir maz rezultātu gadījūmi jārēķina, bet var uzlabot ar kādas programmas ieteikšanu, kuru var izmantot lai ievadot noteiktās vērtības varēs redzēt rezultātus, piemēram: https://www.calculator.net/triangle-calculator.html (priekš trijstūriem). Universāli šo var izdarīt ar 'Excel' tabulām vai tieši šim gadījumam izmantojot blīvuma kalkulatoru: https://www.calculatorsoup.com/calculators/physics/density.php, bet daudzi to neizmanto, jo neiedomājas vai nezin. Skolēniem var ieteikt šādu rīku izmantošanu lai atvieglotu dzīvi. "
+                                "Eksperimentu bija viegli veikt, jo tas bija vienkāršs salīdzinot ar citiem. Veinīgais, kas bija ierobežojums bija rēķināšanas daudzums.",
+                                "Bija daudz jārēķina ar roku, kas 2. eksperimentā ved pie daudz kļūdām. Šo nevar uzlabot ar rēķināmo daudzumu, jo jau tā ir maz rezultātu gadījūmi jārēķina, bet var uzlabot ar kādas programmas ieteikšanu, kuru var izmantot lai ievadot noteiktās vērtības varēs redzēt rezultātus, piemēram: https://www.calculator.net/triangle-calculator.html (priekš trijstūriem). Universāli šo var izdarīt ar 'Excel' tabulām vai tieši šim gadījumam izmantojot blīvuma kalkulatoru: https://www.calculatorsoup.com/calculators/physics/density.php, bet daudzi to neizmanto, jo neiedomājās vai nezin. Skolēniem var ieteikt šādu rīku izmantošanu lai atvieglotu dzīvi. "
                             ]
                         }
                     },
@@ -210,7 +208,7 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Redzams, ka hipotēze ir apstiprinājusies. To var apstiprināt ar datiem. Protams, teorētiski var redzēt arī, ka pēc blīvuma formulas `(rho=m/V)`, kur tuvākais formas ietekmei ir `V`, bet ja formu maina tilpums nemainās tiklīdz kamēr lielums nepieaug. To var arī pierādīt ar Arhimēda spēku. Mēs praktiski vēl nezinām ja blīvuma vērtības ir ļoti lielas, piemēram, kas notiekas ar melniem carumiem un to formu maiņu. Spriežot pēc ši materiāla: https://www.youtube.com/watch?v=w0q4zNQIOjA melniem caurumiem ir ļoti liels blīvums `(4*10^14 g/(cm^3))` un par tiem ir maz zināms, toties mainot to formu mainīsies telpsiskais laiks, kurš var teoretiski izveidot 'tārpu caurums', kas veidos ātrāku pārvietošanos par gaismas ātrumu, tātad hipotēze pašlaik tikai pastāv objektiem, kuri nesasniedz melno caurumu blīvumu."
+                                "Redzams, ka hipotēze ir apstiprinājusies. To var apstiprināt ar datiem. Protams, teorētiski var redzēt arī, ka pēc blīvuma formulas `(rho=m/V)`, kur tuvākais formas ietekmei ir `V`, bet ja formu maina, tilpums nemainās tiklīdz kamēr lielums nepieaug. To var arī pierādīt ar Arhimēda spēku. Mēs praktiski vēl nezinām ja blīvuma vērtības ir ļoti lielas, piemēram, kas notiekas ar melniem carumiem un to formu maiņu. Spriežot pēc ši materiāla: https://www.youtube.com/watch?v=w0q4zNQIOjA melniem caurumiem ir ļoti liels blīvums `(4*10^14 g/(cm^3))` un par tiem ir maz zināms, toties mainot to formu mainīsies telpsiskais laiks, kurš var teorētiski izveidot 'tārpu caurumu', kas veidos ātrāku pārvietošanos par gaismas ātrumu, tātad hipotēze pašlaik tikai pastāv objektiem, kuri nesasniedz melno caurumu blīvumu."
                             ]
                         }
                     }
@@ -222,7 +220,7 @@ export const macibas = [
                 components: [
                     {
                         type: "Text",
-                        children: "Uzdevums: Nosaki savu atttīstīto jaudu, kāpjot pa kāpnēm lēni, ātrāk un ļoti ātri."
+                        children: "Uzdevums: Nosaki savu attīstīto jaudu, kāpjot pa kāpnēm lēni, ātrāk un ļoti ātri."
                     },
                     {
                         type: "Title",
@@ -254,7 +252,7 @@ export const macibas = [
                         type: "UList",
                         props: {
                             data: [
-                                "Mērlents (iedeļas vērtība `0.001m`, mērapjoms `3m`)",
+                                "Mērlente (iedeļas vērtība `0.001m`, mērapjoms `3m`)",
                                 "Hronometrs (iedeļas vērtība `0.01s`)",
                             ]
                         }
@@ -267,9 +265,9 @@ export const macibas = [
                         type: "OList",
                         props: {
                             data: [
-                                "Ar sarvu palīdzību noteikt cilvēka masu `kg`.",
+                                "Ar svaru palīdzību noteikt cilvēka masu `kg`.",
                                 "Izmērīt kāpņu augstumu `h`.",
-                                "Pārvieotjoties no sākumpunktu līdz galapunktam nomērīt laiku  `(t)`.",
+                                "Pārvietojoties no sākumpunkta līdz galapunktam nomērīt laiku  `(t)`.",
                                 "Uz papīra noteikto laiku `(t)` pierakstīt, ievērojot pareizo mērvienību un ievērojot, ka laiks ir bāzes-60 skaitlis!",
                                 "Aprēķināt jaudu `(P)`, izmantojot formulu: `P=(mgh)/t`.",
                                 "Sekot 2. punktam katru 5. reizi un katru reizi sekot 3.-5.",
@@ -389,9 +387,9 @@ export const macibas = [
                                 "1. Kurā gadījumā ir attīstīta lielāka jauda? Pamato.",
                                 "Lielāka jauda ir attīstīta, kad laiks ir mazāks. To var apskatīt ari formulā `P=(mgh)/t`, kur var redzēt, ka pamazinot `t`, palielinās `1/t`. Dēļ šī secinājuma var apstiprināt tabulā rakstīto, ka vismazākam laikam ir vislielākā jauda.",
                                 "2. Salīdzini savu jaudi ar tabulā (https://ibb.co/QP3tF0C) dotajām vērtībām no cilvēka darbības veida.",
-                                "Interesanti, ka strādājot fizisku darbu līdzas kāpņu kāpšanai, bet ātrā pārvietošanās ar lieliem soļiem ir jaudīgāks nekā skrienot pa kāpnēm ar 1 pakāpiena atstarpi. Vidēji ātra kāpņu kāpšana līdzas arī ātrai soļošanai, drusku pārspēj to.",
+                                "Interesanti, ka strādājot fizisku darbu līdzas kāpņu kāpšanai, bet ātrā pārvietošanās ar lieliem soļiem ir jaudīgāks nekā skrienot pa kāpnēm ar 1 pakāpiena atstarpi. Vidēji ātra kāpņu kāpšana līdzas arī ātrai soļošanai, drusku pārspēj to. Iegūtā jauda ir drusku lielāka par tabulā minētajām jaudām saistītām ar kāpnēm, kas var radīties no paātrinātas kustības.",
                                 "3. Secinājumi.",
-                                "Tabulā var redzēt, ka hipotēze apstiprinās un, ka jauda ir lielāka, jo laiks ir mazāks. Skrienot jauda ir liela, kas ved uz nogurumu, bet ejot nogurums nav tik liels, jo jauda nav tik liela, dēļ tā, ka distance tika veikta lēnāk nekā skrienot. Tabulā nav pilnīgi dilstoša līnija, bet tas ir tikai dēļ fakta, ka tika izmantoti tikai 3 mērījumi un apskatot ļoti maza laika vērtību varētu redzēt, ka jauda būs ļoti liela. To var arī redzēt formlulā `P=(mgh)/t`, kur kā jau minēju iepriekš, `t` pamazinoties, palielinās `1/t`. Šis tika praktiski pierādīts ar mazām `t` vērtībam: https://www.popsci.com/science/article/2013-07/physics-record-breaking-run/. Te var apskatīt, ka pasaules rekordā skriešanā, tika pielietoti `2619W`, kurā protams bija iesaistītas mazas `t` vērtības."
+                                "Tabulā var redzēt, ka hipotēze apstiprinās un, ka jauda ir lielāka, jo laiks ir mazāks. Skrienot jauda ir liela, kas ved uz nogurumu, bet ejot nogurums nav tik liels, jo jauda nav tik liela, dēļ tā, ka distance tika veikta lēnāk nekā skrienot. Tabulā nav pilnīgi dilstoša līnija, bet tas ir tikai dēļ fakta, ka tika izmantoti tikai 3 mērījumi un apskatot ļoti maza laika vērtību varētu redzēt, ka jauda būs ļoti liela. To var arī redzēt formlulā `P=(mgh)/t`, kur kā jau minēju iepriekš, `t` pamazinoties, palielinās `1/t`. Šis tika praktiski pierādīts ar mazām `t` vērtībam 2008. gadā: https://www.popsci.com/science/article/2013-07/physics-record-breaking-run/. Te var apskatīt, ka pasaules rekordā skriešanā, tika pielietoti `2619W`, kurā protams bija iesaistītas mazas `t` vērtības."
                             ]
                         }
                     }
@@ -399,7 +397,7 @@ export const macibas = [
             },
             {
                 id: 5,
-                nosaukums: "Slīdes berzes spēks. Slīdes berzes koeficinets. Nr.5",
+                nosaukums: "Slīdes berzes spēks. Slīdes berzes koeficients. Nr.5",
                 components: [
                     {
                         type: "Title",
@@ -419,8 +417,8 @@ export const macibas = [
                             data: [
                                 "Noteikt klucīša berzes spēka atkarību no klucīša smaguma spēka.",
                                 "Iegūto atkarību attēlot grafiski.",
-                                "Noteikt klucīša slīdes berzes koeficinetu.",
-                                "Noteikt slīdes berzes keoficentu, izmantojot slīpo plakni",
+                                "Noteikt klucīša slīdes berzes koeficientu.",
+                                "Noteikt slīdes berzes keoficientu, izmantojot slīpo plakni",
                             ]
                         }
                     },
@@ -458,7 +456,7 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Sakarā ar to, ka palielinās masa `[kg]`, palielinās arī `mg` (masa * brīvās krišanas pātrinājums). Zinot, ka `F_r=mg` un `F_b=muF_r=mumgcosalpha`, kur `mu` - berzes koeficients ir nemainīgs un `g` - gravitācijas spēks uz zemes ir `const`, `m` - masa.",
+                                "Sakarā ar to, ka palielinās masa `[kg]`, palielinās arī `mg` (masa * brīvās krišanas paātrinājums). Zinot, ka `F_r=mg` un `F_b=muF_r=mumgcosalpha`, kur `mu` - berzes koeficients ir nemainīgs un `g` - gravitācijas spēks uz zemes ir `const`, `m` - masa.",
                                 // "`F_b = ({const})*m*({const})*({const})`",
                                 // "Var secināt, ka `F_b` ir atkarīgs no `m`, jeb- klucīša berzes spēks atkarīgs no masas."
                             ]
@@ -544,7 +542,7 @@ export const macibas = [
                     },
                     {
                         type: "Title",
-                        children: "Secinājumi un darba anlīze"
+                        children: "Secinājumi un darba analīze"
                     },
                     {
                         type: "Title",
@@ -567,7 +565,7 @@ export const macibas = [
                         props: {
                             data: [
                                 "Dēļa garums bija par mazu, lai varētu precīzi saprast rezultātus, kas tika rādīti uz dinanometra. Dēli varētu pagarināt vai iegādāties jaunu dēli.",
-                                "Dinonametra vērtības strauji lēkāja, ko varētu uzlabot ar elektriskā dinanometra ieviešanu, toties vajadzīgais budžets būtu samērā liels, tātad var veikt pirmo uzlabojumu, lai precīzāk varētu 'noķert' ar acīm pareizo vērtību. Toties, šis uz maziem lielumiem nebija ļoti ierobežojoši.",
+                                "Dinomametra vērtības strauji lēkāja, ko varētu uzlabot ar elektriskā dinamometra ieviešanu, toties vajadzīgais budžets būtu samērā liels, tātad var veikt pirmo uzlabojumu, lai precīzāk varētu 'noķert' ar acīm pareizo vērtību. Toties, šis uz maziem lielumiem nebija ļoti ierobežojoši.",
                                 "Klučiem dažiem bija nolauzti gali, kas veda pie ļoti straujas kritiskās domāšanas par jautājumu 'Kā lai pievienot klučus pie dēļa?', šo varētu viegli izlabot ar jaunu kluču vai tā galiņu iegādāšanos."
                             ]
                         }
@@ -580,7 +578,7 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Hipotēze apstiprinājās. Kamēr palielinās klucīša masa, palielinās arī berzes spēks. Pēc grafika var arī redzēt šo parādību, jo līnija, kas attēlo, ka `F_b` no `mg` attiecība ir augoša, kas arī atbilst hipotēzei. Protams visprecīzāk būtu šo apskatīt arī ar ļoti lieliem svariem, bet dēļ skolas apstākļiem un pieeijamiem līdzekļiem, tas nebija iespējams izdarīt. Protams sakāra ar lielām `m` vērtībam nav praktiski nekas zināms, tikai teorētiski, tāpēc ir iespēja, ka hipotēze ļoti lielās `m` vērtības būs nepatiesa.",
+                                "Hipotēze apstiprinājās. Kamēr palielinās klucīša masa, palielinās arī berzes spēks. Pēc grafika var arī redzēt šo parādību, jo līnija, kas attēlo, ka `F_b` no `mg` attiecība ir augoša, kas arī atbilst hipotēzei. Protams visprecīzāk būtu šo apskatīt arī ar ļoti lieliem svariem, bet dēļ skolas apstākļiem un pieeijamiem līdzekļiem, to nebija iespējams izdarīt. Protams sakāra ar lielām `m` vērtībam nav praktiski nekas zināms, tikai teorētiski, tāpēc ir iespēja, ka hipotēze ļoti lielās `m` vērtības būs nepatiesa.",
                                 "Kaut vai vēršoties par šō jautājumu dziļāk, uzzināju, ka lielām `m` vērtībam, kas līdzās melnajam caurumam, vēl nav zināms pat teorētiski precīzs dinamiskais berzes spēks apkārt esošajam melnajam caurumam. Info par šō rindkopu atrodams sekojoši: https://arxiv.org/abs/1108.1163"
                             ]
                         }
@@ -647,7 +645,7 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Ja ķermeni vienmērīgi velk augšup pa slīpo plakni, tad vilcējspēka `F_v` darbs if `A=F_vl`, bet ķermeņa potenciālās enerģijas izmaiņa `DeltaW_p=mgh`, kur `m` - ķermeņa masa. To ievērojot, izsaka slīpās plaknes lietderības koeficientu `eta=(mgh)/(F_vl)`.",
+                                "Ja ķermeni vienmērīgi velk augšup pa slīpo plakni, tad vilcējspēka `F_v` darbs ir `A=F_vl`, bet ķermeņa potenciālās enerģijas izmaiņa `DeltaW_p=mgh`, kur `m` - ķermeņa masa. To ievērojot, izsaka slīpās plaknes lietderības koeficientu `eta=(mgh)/(F_vl)`.",
                                 "Ķermeni vienmērīgi pārvietojot augšup, `F_v=mg(sinalpha+mucosalpha)` un `eta_0=(mgh)/(mg(sinalpha+mucosalpha)l)`. Tā kā `h/l=sinalpha`, tad `eta_0=sinalpha/(sinalpha+mucosalpha)=1/(1+muctg(alpha))`"
                             ]
                         }
@@ -662,9 +660,9 @@ export const macibas = [
                             data: [
                                 "Izveidot slīpo plakni, dēlīti iestiprinot statīvā.",
                                 "Ar dinamometru noteikt klucīša un atsvara kopējo smaguma spēku `mg` (izmantot visus atsvarus).",
-                                "Novietot klucīti ar atsvaru uz slīpās plaknes un ar dinamometru vienmērīgi vilkt augšup kulcīti. Izmērīt vilcējspēku `F_v`, slīpās plaknes augstumu `h`, garumu `l` un slīpuma leņķi `alpha`.",
+                                "Novietot klucīti ar atsvaru uz slīpās plaknes un ar dinamometru vienmērīgi vilkt augšup klucīti. Izmērīt vilcējspēku `F_v`, slīpās plaknes augstumu `h`, garumu `l` un slīpuma leņķi `alpha`.",
                                 "Mērījumus atkārtot, mainot plaknes slīpuma leņķi `alpha`.",
-                                "Attēlot grafiski lietderības koeficeenta `eta` atkarību no plaknes slīpuma leņķa `alpha`.",
+                                "Attēlot grafiski lietderības koeficenta `eta` atkarību no plaknes slīpuma leņķa `alpha`.",
                                 "Noteikt slīdes berzes koeficientu `mu` klucītim attiecībā pret dēlīti.",
                                 "Izvēlētajām slīpuma leņķa `alpha` vērtībām aprēķināt teorētisko slīpas plaknes lietderības koeficientu `eta_0`. (`mu` vietā izmantot `mu_(vid.)`)."
                             ]
@@ -746,7 +744,7 @@ export const macibas = [
                                 "`eta=((mg)_1h_1)/(F_(v_1)l_1)=(0.17*0.08)/(0.8*0.5)=0.340`",
                                 "`eta_0=1/(1+mu_(vid.)ctg(alpha))=1/(1+0.5*6.17)=0.245`",
                                 "`mu=F_(v_1)/(mg)_1=0.3/(0.06*10)=0.50`",
-                                "`mu`(absolūtā un relatīva kļūda)`eta=(mgh)/(F_v)l; (Deltaeta)/eta=(Delta(mg))/(mg)+(Deltah)/h+(DeltaF_v)/F_v+(Deltal)/l=>`",
+                                "`mu`(absolūtā un relatīvā kļūda)`eta=(mgh)/(F_v)l; (Deltaeta)/eta=(Delta(mg))/(mg)+(Deltah)/h+(DeltaF_v)/F_v+(Deltal)/l=>`",
                                 "`(Deltaeta)/0.34=0.05/1.70+0.001/0.08+0.05/0.8+0.001/0.5=>`",
                                 "`Deltaeta=0.34*0.106=0.036`",
                                 "`r=(Deltaeta)/eta_(vid.)=0.036/0.441=0.081=8.1%`",
@@ -756,7 +754,7 @@ export const macibas = [
                     },
                     {
                         type: "Title",
-                        children: "Secinājumi un darba anlīze"
+                        children: "Secinājumi un darba anlaīze"
                     },
                     {
                         type: "Title",
@@ -778,7 +776,7 @@ export const macibas = [
                         type: "UList",
                         props: {
                             data: [
-                                "Leņķa noteikšana: lenķi bija ļoti neērti noteikt un kopēji apmulsoši. Ar pirmo piegājienu mana grupa nepareizi noteica leņķus un bija viss jāsāk no jauna, dēļ tā, ka mēs pie nepareiza punkta pielikām transportieri un tas mūsu leņķus veidoja neticami lielus. Tas protams divkāršoja mūsu pavadīto laiku pie lielumu mērīšanas un atstāja mazāk lai pabeigtu darbu. Vienīgais, kā uzlabot šo ir iemācīt audzēkņiem pareizi transportieru izmantot, kaut vai no kļūdām ir labi bieži vien mācīties.",
+                                "Leņķa noteikšana: lenķi bija ļoti neērti noteikt un kopēji apmulsoši. Ar pirmo piegājienu mana grupa nepareizi noteica leņķus un bija viss jāsāk no jauna, dēļ tā, ka mēs pie nepareizā punktā pielikām transportieri un tas mūsu leņķus veidoja neticami lielus. Tas protams divkāršoja mūsu pavadīto laiku pie lielumu mērīšanas un atstāja mazāk lai pabeigtu darbu. Vienīgais, kā uzlabot šo ir iemācīt audzēkņiem pareizi transportieru izmantot, kaut vai no kļūdām ir labi bieži vien mācīties.",
                             ]
                         }
                     },
@@ -793,7 +791,7 @@ export const macibas = [
                                 "Grafiski var ļoti labi redzēt, ka tikmēr kamēŗ pieaug leņķis `alpha`, sekojoši arī pieaug lietderības keoficients `eta`, tātad hipotēze pilnīgi apstirpinās un pētāmā problēma ir atrisināta veiksmīgi un patiesi. Bet šis neturpināsies visu laiku, ja apskatīt: ",
                                 "`eta_0=1/(1+muctgalpha)`, kamēr `0<alpha<=pi/2`, tikmēr `ctgalphainR^+`, kas nozīmē, ka `eta_0inR^+`, bet tad, kad `alpha>pi/2`, tad `ctgalphainR^- => ctgalphainR^-`, kas nozīmē, ka `eta_0inR^-`",
                                 "Pēc šī spriestā var secināt, ka hipotēze apstiprinās tikai `0<=alpha<pi/2`.",
-                                "Protams šis ir tikai ja pieņem `muinR^+`, bet pēc šī raksta: https://physicsworld.com/a/negative-friction-surprises-researchers/, negatīvs slīdez berzes koeficients ir iespējams, bet ļoti specifiskos apstākļos, kuri pēc manas saprašanas netika piepildīti."
+                                "Protams šis ir tikai ja pieņem `muinR^+`, bet pēc šī raksta: https://physicsworld.com/a/negative-friction-surprises-researchers/, negatīvs slīdes berzes koeficients ir iespējams, bet ļoti specifiskos apstākļos, kuri pēc manas saprašanas netika piepildīti."
                             ]
                         }
                     },
@@ -835,7 +833,7 @@ export const macibas = [
                         props: {
                             data: [
                                 "Neatkarīgais: Garums `(l)`",
-                                "Atkarīgais: Laiks `(t)`, Deiga periods `(T)`",
+                                "Atkarīgais: Laiks `(t)`, Diega periods `(T)`",
                                 "Konstantais: Brīvās krišanas paātrinājums `(g)`",
                             ]
                         }
@@ -864,7 +862,7 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Diega svārsta jeb matemātiskā svārsta svārstību periods ir atkarīgs tikai no svārsta garuma `l` un brīvās krišanas paātrinājuma `g`. Jo garāks svārsts, jo lielāks ir svārstību periods. Svārstību periodu aprēķina pēc formulas: ",
+                                "Diega svārsta jeb matemātiskā svārsta svārstību periods ir atkarīgs tikai no svārsta garuma `l` un brīvās krišanas paātrinājuma `g`. Svārstību periodu aprēķina pēc formulas: ",
                                 "`T=2pisqrt(l/g)`. tātad lai nopteiktu `g`, var pārveidot vienādojumu par; `g=l((2pi)/T)^2`."
                             ]
                         }
@@ -907,6 +905,24 @@ export const macibas = [
                         }
                     },
                     {
+                        type: "Title2",
+                        children: "Svārstību periods kavdrātā atkarībā no svārsta garuma `T^2=F(l)`"
+                    },
+                    {
+                        type: "Chart",
+                        props: {
+                            info: {
+                                title: "Svārstību periods kavdrātā atkarībā no svārsta garuma `T^2=F(l)a",
+                                x: "l, m", 
+                                y: "T², s²"
+                            },
+                            data: [
+                                ["Svārsta garums", 0, "15.5", "21.0", "24.5", "27.0", "30.0", "33.0", "36.0", "39.0", "42.0", "45.0"],
+                                ["Svārstību periods kvadrātā", 0, 0.645, 0.916, 1.051, 1.197, 1.309, 1.418, 1.518, 1.598, 1.745, 1.850],
+                            ]
+                        }
+                    },
+                    {
                         type: "Text",
                         props: {
                             text: [
@@ -931,7 +947,7 @@ export const macibas = [
                     },
                     {
                         type: "Title",
-                        children: "Secinājumi un darba anlīze"
+                        children: "Secinājumi un darba analīze"
                     },
                     {
                         type: "Title",
@@ -955,7 +971,7 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Eksperimentā nebija daudz trūkumu, bet liels trūkums bija koncentrānticja pie svārstību skaita noteikšanas. Rīki ar kuriem vajadzēja mērīt bija lieliski. Lai uzlabotu koncentrēšanos, ir atkarīgs no cilvēka paša.",
+                                "Eksperimentā nebija daudz trūkumu, bet liels trūkums bija koncentrācja pie svārstību skaita noteikšanas. Rīki ar kuriem vajadzēja mērīt bija labi. Lai uzlabotu koncentrēšanos, ir atkarīgs no cilvēka paša un vai viņš to grib.",
                                 "Lai uzlabotu cilvēka koncentrācijas laiku ir ieteicams meditēt un lasīt grāmatas, sekojot šim rakstam: https://healthcaremba.gwu.edu/blog/how-to-increase-attention-span/"
                             ]
                         }
@@ -968,7 +984,7 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Hipotēze ir apstirpinājusies, to var saredzēt grafikā un tabulā. Kamēŗ aug garums, tikmēr pieaug arī periods. Tas arī apstirpinās teorētiski pēc formulas `T=2pisqrt(l/g)`, kur var redzēt, ka `l` attīecīgi maina `T`, ņemot pie tam vērā, ka `pi` un `g` ir konstantas vērtības mūsu apstākļos uz zemes. Toties melnajā carumā `(gapprox10^10)`, `sqrt(l/g)`, pat `l` ļoti lieliem lielumiem daudz nemainīs momentu, tātad teorētiski hipotēze priekš cilvēka acs būtu grūti saskatāma uz objektā kā melnais caurums, savukārt uz zemes viegli saskatāma.",
+                                "Hipotēze ir apstiprinājusies, to var saredzēt grafikā un tabulā. Kamēŗ aug garums, tikmēr pieaug arī periods. Tas arī apstiprinās teorētiski pēc formulas `T=2pisqrt(l/g)`, kur var redzēt, ka `l` attiecīgi maina `T`, ņemot pie tam vērā, ka `pi` un `g` ir konstantas vērtības mūsu apstākļos uz zemes. Toties melnajā carumā `(gapprox10^10)`, `sqrt(l/g)`, pat `l` ļoti lieliem lielumiem daudz nemainīs momentu, tātad teorētiski hipotēze priekš cilvēka acs būtu grūti saskatāma uz melnā cauruma, savukārt uz zemes viegli saskatāma.",
                             ]
                         }
                     }
@@ -1043,7 +1059,7 @@ export const macibas = [
                                 "`F_(el)=kDeltal`, `k` - stinguma koeficients `[N/m]`; `Deltal` - pagarinājums `[m]`",
                                 "Tā kā `F_(el)=mg`, tad atsperes stinguma koeficients `k=(mg)/(Deltal)`.",
                                 "Atsperes svārstam svārstību periods `T=2pisqrt(m/k)`.",
-                                "No šīs izteiksmes atpseres stinguma koeficinets `k=m((2pi)/T)^2`."
+                                "No šīs izteiksmes atpseres stinguma koeficients `k=m((2pi)/T)^2`."
                             ]
                         }
                     },
@@ -1170,7 +1186,7 @@ export const macibas = [
                     },
                     {
                         type: "Title",
-                        children: "Secinājumi un darba anlīze"
+                        children: "Secinājumi un darba analīze"
                     },
                     {
                         type: "Title",
@@ -1180,7 +1196,7 @@ export const macibas = [
                         type: "Text",
                         props: {
                             text: [
-                                "Skatoties pēc relatīvās kļūdas, kura ir zem `50%`, var spriest, ka rezultāti ir ticami- `2.3%` un `4.7%`. Rezultātiem izmantotās fromulas liekas arī ir pareizi atvasinātas, var redzēt https://www.uzdevumi.lv/p/fizika/10-klase/mehaniskas-svarstibas-un-vilni-6921/re-93d233dd-1c9b-4d53-a84e-ac536289a1e6. Kā arī spriežot pēc grafika, tā izskats ir gandrīz precīzi vienāds ar izskatu te (ņemts no uzdevumi.lv): https://resources.cdn.uzdevumi.lv/1a62c097-d297-4de5-ae8e-55ab47e433aa/1.3.svg. Huka likums likās ticamāks, jo `r` bija gandrīz divas reizes mazāks. Protams izmantojot atsperes svārstu rēķināšanā piedalījās vairāk skaitļi, bet Huka likumā piedalījās vairāk praktiskā daļa, kura nav tik atkarīga no cilvēka koncentrācijas un reakcijas laika.",
+                                "Skatoties pēc relatīvās kļūdas, kura ir zem `50%`, var spriest, ka rezultāti ir ticami- `2.3%` un `4.7%`. Rezultātiem izmantotās formulas liekas arī ir pareizi atvasinātas, var redzēt https://www.uzdevumi.lv/p/fizika/10-klase/mehaniskas-svarstibas-un-vilni-6921/re-93d233dd-1c9b-4d53-a84e-ac536289a1e6. Kā arī spriežot pēc grafika, tā izskats ir gandrīz precīzi vienāds ar izskatu te (ņemts no uzdevumi.lv): https://resources.cdn.uzdevumi.lv/1a62c097-d297-4de5-ae8e-55ab47e433aa/1.3.svg. Huka likums likās ticamāks, jo `r` bija gandrīz divas reizes mazāks. Protams izmantojot atsperes svārstu rēķināšanā piedalījās vairāk skaitļi, bet Huka likumā piedalījās vairāk praktiskā daļa, kura nav tik atkarīga no cilvēka koncentrācijas un reakcijas laika.",
                             ]
                         }
                     },
@@ -1190,7 +1206,7 @@ export const macibas = [
                     },
                     {
                         type: "Text",
-                        children: "Tehnoloģija un rīki tieši šajā pētnieciskajā darbā nav trūkums. Protams, tas nenozīmē, ka ierobežojumu vispār nav, ja nebūtu, tad relatīvā kļūda nepastāvētu. Ierobežojums eksperimenta laikā bija tieši mērot `T` vērtību, jo bija jākoncentrējas uz vienu lietu, kas atkārtojas 10 reizes. Daudziem pusaudžiem ir grūti koncentrēties precīzi 10 reizes. Lai uzlabotu šo, vajag gribas spēku pašam cilvēkam, bet spriežot pēc ši raksta: https://healthcaremba.gwu.edu/blog/how-to-increase-attention-span/, labākie veidi kopēji ir lasīt grāmatas vai meditēt."
+                        children: "Tehnoloģija un rīki tieši šajā pētnieciskajā darbā nav trūkums. Protams, tas nenozīmē, ka ierobežojumu vispār nav, ja nebūtu, tad relatīvā kļūda nebūtu tik liela. Ierobežojums eksperimenta laikā bija tieši mērot `T` vērtību, jo bija jākoncentrējas uz vienu lietu, kas atkārtojas 10 reizes. Daudziem pusaudžiem ir grūti koncentrēties precīzi 10 reizes. Lai uzlabotu šo, vajag gribas spēku pašam cilvēkam, spriežot pēc ši raksta: https://healthcaremba.gwu.edu/blog/how-to-increase-attention-span/, labākie veidi kopēji ir lasīt grāmatas vai meditēt."
                     },
                     {
                         type: "Title",
@@ -1198,7 +1214,7 @@ export const macibas = [
                     },
                     {
                         type: "Text",
-                        children: "Hipotēze apstiprinājās, smaguma spēka dēļ, pagarunājums palielinājāš, bet stinguma koeficents palika vienmērīgs `(~17)`. Kā jau visur, mes nēesam pārliecināti, kas notiekas, ja paliena `mg` uz melno caurumu izmēriem. Toties šim es pēc ilgas meklēšanas arī atradu rakstu (nav tieši par melniem caurumiem): https://physics.princeton.edu/~mcdonald/examples/stiffness.pdf."
+                        children: "Hipotēze apstiprinās, smaguma spēka dēļ, pagarunājums palielinājās, bet stinguma koeficients palika vienmērīgs `(~17)`. Kā jau visur, mes nēesam pārliecināti, kas notiekas, ja paliena `mg` uz melno caurumu izmēriem. Toties šim es pēc ilgas meklēšanas arī atradu rakstu (nav tieši par melniem caurumiem): https://physics.princeton.edu/~mcdonald/examples/stiffness.pdf."
                     }
                 ]
             }
