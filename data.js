@@ -1,4 +1,4 @@
-export const macibass = [ // TODO: change to macibas not macibass
+export const macibas = [ // TODO: change to macibas not macibass
   {
     id: 0,
     macibasNosaukums: "fizika",

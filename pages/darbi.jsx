@@ -11,8 +11,9 @@ export default function darbi({ macibas, error }) {
       <Header title="darbi"> </Header>{" "}
       <Container>
         <Flex>
-          {error && <p style={{ color: "red" }}>{error}</p>}
-          {!isEmpty(macibas) && <MacibasCardList macibas={macibas} />}
+          <p style={{ color: "red" }}>No data found!</p>
+          {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
+          {/* {!isEmpty(macibas) && <MacibasCardList macibas={macibas} />} */}
         </Flex>{" "}
       </Container>{" "}
     </>
