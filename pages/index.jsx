@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <MainContainer>
         <AuthorBox>
-          <Author>Matīss Burmists</Author>
+          <Author>Matīss Burmistrs un Edžus Meirāns</Author>
         </AuthorBox>
 
         <MainHeading>PĒTNIECISKIE DARBI</MainHeading>

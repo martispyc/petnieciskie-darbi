@@ -19,7 +19,7 @@ function Header({ title, back, children, shadowSize }) {
 
             <Title>{title}</Title>
 
-            <Author>Matīss Burmistrs 10.D</Author>
+            <Author>Matīss Burmistrs un Edžus Meirāns 11.D</Author>
         </Flex>
         {children}
       </HeaderStyled>
