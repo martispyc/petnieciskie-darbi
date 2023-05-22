@@ -154,6 +154,20 @@ export const macibas = [
             type: "Title",
             children: "Secinājumi un darba analīze",
           },
+          {
+            type: "Text",
+            props: {
+              text: [
+                "Universālās gāzes koeficients ir neatkarīgs no spiediena, temperatūras un gāzes veida. Tas ir universāls mērogs, kas nodrošina vienotu mērvienību un salīdzināmību starp dažādām gāzēm.",
+                "Universālās gāzes koeficients ir saistīts ar ideālo gāzu likumu, kas apraksta ideālās gāzes uzvedību, kurā starp spiedienu `(P)`, tilpumu `(V)` un temperatūru `(T)` ir lineāra saistība, kas tiek formulēta kā `PV = nRT`, kur `R` ir universālās gāzes konstante.",
+                "Darba rezultātā tika iegūts, ka universālā gāzu konstamte ir `9,696+-1,1263 J/(mol*k)`. ",
+                "Salīdzinot mūsu rezultātu ar teorijas materiālos https://www.fizmix.lv/formulas/2531  norādīto universālo gāzu konstanti, `R = 8,314 J/mol*k` var secināt, ka, ja ņem vērā precizitātes kļūdu, tad iegūtā vērtība ir tuvu, lai sakristu.",
+                "Apskatot iegūtos datus jāņem vērā, ka darba relatīvā kļūda ir liela  `-13,03%`, kas nozīmē, ka eksperimenta laikā tika pieļautas kļūdas.",
+                "Atsaucoties uz uzdevumi.lv tēmu par mērījumu precizitāti, secinām, ka kļūda ir ārpus vēlamā diapazona, kas ir `<3%`",
+                "Lielākās problēmas sagādāja, tas, ka monometrs nebija digitāls, kas sagādaja mums(cilvēkiem) problēmas noteikt precīzas spiediena izmaiņas.",
+              ],
+            },
+          },
         ],
       },
       {
@@ -174,9 +188,9 @@ export const macibas = [
             type: "Text",
             props: {
               text: [
-                "a) stieplītes atrauāanas metodi;",
-                "b) kapilārās pacelāanās metodi;",
-                "c) piliena atrauāanās metodi.",
+                "a) stieplītes atraušanas metodi;",
+                "b) kapilārās pacelšanās metodi;",
+                "c) piliena atraušanās metodi.",
               ],
             },
           },
@@ -376,6 +390,22 @@ export const macibas = [
             type: "Title",
             children: "Secinājumi un darba analīze:",
           },
+          {
+            type: "Text",
+            props: {
+              text: [
+                "Visu metožu rezultāti ir ticami, jo relatīvā kļūda nevienā gadījumā nepārsniedz  `50%`.",
+                "Novērojums:",
+                "Var secināt, ka 2. eskperimentā gūtie dati rezultāti bija daudz mazāk ticami nekā pārejos, skatoties pec kļūdas lielumiem. Var secinat, ka 3. eksperimenta rezultati ir precīzāki. Balstoties uz internetā atrastiem datiem:",
+                "https://www.siic.lu.lv/fiz/IT/F_11/default.aspx@tabid=3&id=301_4.html",
+                "ūdens spraiguma koeficients ir `7,4 * 10 ^-2`, aplūkojot ūdens spraiguma vidējo lielumu 3.eksperimentā var secināt, ka abi atšķīrās tikai par `0.01`.",
+                "Darbā ir vairāki trūkumi:",
+                "pirmkārt cilvēku kļūda mērījumu noteikšanā, otrkārt izmantotās elektroierīces ir novecojušas, kas noved pie riska, ka ievāktie dati nav precīzi. Lai iegūtu precīzākus rezultātus vajadzētu izmantot mērierīces ar lielāku un precīzāku mērapjomu. Uzlabojumi: Eksperimentu var veikt datora simulācijā, piemērām programmā “Anylogic”, ko mums mācīja apgūt 10. klasē, vai arī izmantot jaunākas mērierīce, kas ir precīzākas un nenolietotas.",
+                "Secinājums:",
+                "ūdens spraiguma koeficient var iegūt ar vairākām metodēm piliena atraušanās metode, stieplītes atraušanas metode un kapilārās pacelšanās metode. No šīm visām vislabākā un efektīvākā bija piliena atraušanās metode, jo šai metodei sanāca mazāka relatīvā kļūda, kā arī vidējais ūdens spraiguma koeficients sakrita ar vistuvāko internetā (jau norādiju atsauci) pieejamo spraiguma koeficientu.",
+              ],
+            },
+          },
         ],
       },
       {
@@ -508,6 +538,27 @@ export const macibas = [
           {
             type: "Title",
             children: "Secinājumi un darba analīze",
+          },
+          {
+            type: "Text",
+            props: {
+              text: [
+                "Siltuma analīze",
+                "Siltuma analīze norāda, ka klasei ir siltuma bilance, kas ir atbilstoša komforta līmenim. Pēc ASHRAE (Amerikas Apkures, Ventilācijas un Kondicionēšanas Inženieru asociācijas) standartiem, siltuma bilancei jābūt starp `20` un `23°C`. Tā kā temperatūra klases telpā ir `21,5°C`, var teikt, ka temperatūra atbilst šiem standartiem.",
+
+                "Gaisma",
+                "Gaisma ir svarīgs faktors klases telpā. Pēc Starptautiskās Gaisma Asociācijas, iespējams, optimālais gaisma līmenis skolām ir no `300` līdz `500 lux`. Lai gan `1270 lux` pārsniedz ieteicamo līmeni, tas var palīdzēt palielināt skolēnu koncentrēšanās un produktivitātes līmeni.",
+
+                "Skaņa",
+                "Lai gan skaņas līmenis `60 dB` nav pārāk augsts, ir svarīgi atzīmēt, ka skaņas līmenis var atšķirties atkarībā no skolēnu aktivitātes un stundas laika. Ieteicamais skaņas līmenis skolām ir līdz `35 dB`. Skolotājam var būt vērts apsvērt skaņas absorbējošus materiālus, lai samazinātu skaņas līmeni klases telpā.",
+
+                "Mitrums",
+                "Pārāk augsts mitruma līmenis klases telpā var veicināt pelējuma un sēnīšu attīstību, kas var būt kaitīgi skolēnu veselībai. ASHRAE standarti nosaka mitruma līmeni klases telpā no 40 līdz 60%. Tādēļ, ja mitruma līmenis ir `62,5%`, ir vērts pārbaudīt ventilācijas sistēmu un iespējams, apsvērt klimatizācijas sistēmas uzstādīšanu.",
+
+                "Secinājumi",
+                "Secinājumiem izriet, ka fizikas laboratorijā ir nodrošināti piemēroti apstākļi, kas var veicināt labu skolēnu koncentrēšanos un produktivitāti laboratorijas darbā. Tomēr, ir vērts pārbaudīt un uzlabot skaņas un mitruma līmeņus, lai nodrošinātu ideālus apstākļus fizikas eksperimentiem un mācībām.",
+              ],
+            },
           },
         ],
       },
@@ -697,7 +748,30 @@ export const macibas = [
           },
           {
             type: "Title",
-            children: "Rezultātu analīze, izvērtēšana un secinājumi",
+            children: "Rezultātu analīze un eksperimenta izvērtēšana.",
+          },
+          {
+            type: "Text",
+            props: {
+              text: [
+                "iegūtie dati rāda, ka gāzes spiediens un tilpums izometriskā procesā ir tieši proporcionāli (Boila_Mariotta likums). Tas ir, kad temperatūra or nemainīga, gāzes spiediens un tilpums ir atkarīgi tikai no to daudzuma, šajā faījumā, iegūtie  dati atbilst likumam, jo `p * V` produkts paliek nemainīgs visās eksperimenta situācijās (gandrīz konstanti). Rezultāti ir salīdzinami ar iepriešējām pētijumu atziņām par gāzes likumiem un atbilst Boila-likumam.",
+                "Viena no galvenajām problēmām varētu būt neliels paraugu skaits, tikai 10 mērījumu veikšana var būt pārāk, maz lai iegūtie dati būtu pietiekami precīzi. Problēma ir arī ar to  ka ir ierobežojumi, kas ir saistīti ar aparātu precizitāti, piemēram, varētu būt problēmas ar termometra precizitāti, kas varētu ietekmēt gaisa temperatūras rādītājus. Var izmantot vairākus, dažādus termometrus, lai iegūtu precīzākus rezultātus.",
+                "Nav ņemta vērā mitruma ietekme uz gaisa tilpumu un spiedienu, kas varetu ietekmēt iegūtos rezultātus. varētu ievērot stingrākus kontroles pasākumus, lai nodrošinātu, ka mitrums netiek ietekmēts/mainits eksperimenta laikā.",
+                "Lai uzlabotu eksperimenta precizitāti un izvairītos no ierobežojumiem, varētu veikt vairākus mērījumus dažādos apstākļos. Izmantot precīzākus mērīšanas instrumemtus ar vēl mazākām iedaļas vārtībām. Eksperimenta rezultāti liecina, ka gāzes tilpums samazinās, ja spiediens pieaug, un otrādi - tilpums palielinās, ja spiediens samazinās.",
+              ],
+            },
+          },
+          {
+            type: "Title",
+            children: "Secinājumi.",
+          },
+          {
+            type: "Text",
+            props: {
+              text: [
+                "Mēs secinām, ka hipotēze ir apstiprinājusies, jo eksperimentā tika novērots, ka spiediena un tilpuma iezometriskajā procesā pastāv tieša proporcionalitāte starp gāzes spienienu un tilpumu, kas nozīmē, ka Boila - Mariotta likums ir spēkā gāzes spiediena un tilpuma izometriskajā procesā un tas apstiprinās eksperimentā.",
+              ],
+            },
           },
         ],
       },
@@ -713,7 +787,7 @@ export const macibas = [
             type: "Text",
             props: {
               text: [
-                "Pieaugot temperatūrai, proporcionāli palielinās stieples un termistora pretestība",
+                "Pretestības izmaiņas ir atkarīgas no temperatūras un pretestības temperatūras koeficients var būt pozitīvs un negatīvs, atkarībā no materiāla īpašībām",
               ],
             },
           },
@@ -948,15 +1022,30 @@ export const macibas = [
           },
           {
             type: "Title",
-            children: "Rezultātu analīze",
+            children: "Rezultātu analīze un eksperimenta izvērtēšana.",
           },
           {
-            type: "Title",
-            children: "Eksperimenta izvērtēšana",
+            type: "Text",
+            props: {
+              text: [
+                "Pētījumā par metāla stiepli, varētu būt iekļautas arī citas temperatūras vērtības, lai iegūtu vairāk datu un varētu novērot, kā pretestība mainās kad temperatūra palielinās vai samazinās vēl vairāk. Tāpat vēlams būtu iegūt vairāku lielumu paraugus no vienas metāla stieples, lai izslēgtu iespēju, ka konkrētajam paraugam ir kādi individuāli raksturlielumi, kas var ietekmēt rezultātus.",
+                "Arī termirstora pētījumā varētu iekļaut vairāku tempt. vērtību, lai noteiktu precīzākupretestības izmaiņu līkumu. Varētu izmantot vairākus dažādus termistorus, lai pārbaudītu,vai visi termistori reaģē vienādi uz temperatūras izmaiņām. Rezultāti var neattiekties uz visiem materiāliem un visām temperatūrām.",
+              ],
+            },
           },
           {
             type: "Title",
             children: "Secinājumi",
+          },
+          {
+            type: "Text",
+            props: {
+              text: [
+                "Pēc datu analīzes var secināt, ka metāla stieplem ir pozitīvs temperatūras koeficients, jo pretestība palielinās, kad temperatūra paaugstinās. Tas nozīmē, ka metāla stieples pretestība pieaug, kad temperatūra pieaug.",
+                "No otras puses, termistoriem ir negatīvs temperatūras koeficients, jo pretestība samazinās, kad temperatūra paaugstinās. Tas nozīmē, ka termistora pretestība samazinās, kad temperatūra palielinās.",
+                "Šie rezultāti atbilst iepriekš rakstītajam un apstiprina mūsu hipotēzi par metāla stiepļu un termistoru temperatūras koeficientiem.",
+              ],
+            },
           },
         ],
       },
@@ -1251,12 +1340,36 @@ export const macibas = [
             children: "Rezultātu analīze",
           },
           {
+            type: "Text",
+            props: {
+              text: [
+                "Rezulāti ir ticami, spaiļu sprieguma atkarības no ārējas pretestīobs grafikā ir redzams, ka palielinot pretestību, spriegums tuvojas EDS, bet nepārsniedz to, bet lietderības koef. atkarības no pretestības grafikā, redzams, ka `R` vērtībai `r (r = 1,09 Omega)` atbilst `n%` vērtība `50%`, kā arī ir jābūt. `E` un `r` relatīvās kļūdas nepārsniedz `50%`, kas arī norāda uz augstu rezultātu ticamību.",
+              ],
+            },
+          },
+          {
             type: "Title",
             children: "Eksperimenta izvērtēšana",
           },
           {
+            type: "Text",
+            props: {
+              text: [
+                "Eksperimenta galvenie trūkumi ir mērinstrumentu piemēram kā: voltmetra un ampērmetra neprecizitāte un neatbilstoša kvalitāte, piemēram,voltmetrs un ampērmetrs rāda mērījumus ar precizitāti, kas varētu būt augstāka nekā tā ir. Strāvas avots, ko lietojām šajā eksperimentā ir salīdzinoši nolietots, novecojis, kas var ietekmēt tā ticamību. Lai uzlabotu eksperimenta precizitāti, to jāveicar atbilstošiem speciāliem instrumentiem, kas ir izcilā stāvoklī.",
+              ],
+            },
+          },
+          {
             type: "Title",
             children: "Secinājumi",
+          },
+          {
+            type: "Text",
+            props: {
+              text: [
+                "Eksperimenta rezultātos mēs ieguvām strāvas avota elektrisko dzinējspēku `E= (4,35 +- 0,13) V` un iekšējo pretestību `r = (1,09 +- 0,33) Omega`.  Arī var secināt, ka jo lielāka ir pretestība `(R)`, jo lielāks ir avota lietderības koeficients, kas ir redzams grafikā.",
+              ],
+            },
           },
         ],
       },
@@ -1546,6 +1659,16 @@ export const macibas = [
             type: "Title",
             children: "Secinājumi un darba analīze:",
           },
+          {
+            type: "Text",
+            props: {
+              text: [
+                "Eksperimenta rezultāti ir ticami, jo teorētiskā kvēlspuldzes pretestība nominālā režīmā sakrīt ar praktiski iegūto kļūdu robežām. Arī iegūtie voltampēru raksturlīknes grafiki kvēlspuldzei un rezistoram sakrīt ar tiem, kas ir atrodami informācijas avotos, piemēram, https://www.letera.lv/wp-content/uploads/2018/01/elektronikas_pamati_1dala_LETERA.pdf, kur redzams, ka rezistoriem ir lineāra raksturlīkne, bet kvēlspuldzēm ir liekta raksturlīkne. Rezistoriem ir lineāra raksturlīkne, jo to pretestība paliek konstanta neatkarīgi no sprieguma vai strāvas, kas tai tiek piemērota. Tas nozīmē, ka rezistora pretestība mainās proporcionali sprieguma vai strāvas izmaiņām.",
+                "Kvēlspuldzēm ir liekta raksturlīkne, jo to pretestība mainās ne-lineāri atkarībā no sprieguma vai strāvas. Tas ir saistīts ar kvēlspuldzes īpašībām un materiālu, no kuriem tās ir izgatavotas. Kvēlspuldzes raksturlīkne ir novērojama, jo tās pretestība palielinās straujāk, kad uz tām tiek piemērots lielāks spriegums vai strāva, bet pie mazākiem vērtībām to pieaugums ir mazāks.",
+                "Eksperimenta trūkumi ir mērinstrumentu neprecizitāte, lai uzlabotu eksperimenta rezultātu ticamību, ir jālieto speciāli rīki ar mazāku mērījumu kļūdu. No eksperimenta varam secināt, ka kvēlspuldzei atkarībā no jaudas palielināšanas palielinās arī pretestība, bet rezistoram pretestība paliek konstanta pēc grafika.",
+              ],
+            },
+          },
         ],
       },
       {
@@ -1561,7 +1684,7 @@ export const macibas = [
             type: "Text",
             props: {
               text: [
-                "Palielinot kondensatora uzlādes laiku, palielinās arī uzkrātā kapacitāte, bet uzlādes ātrums samazinās (līdz sasniedzot noteiktu robežu).",
+                "Ar uzlādes laika palielināšanos, uzkrātā kapacitāte palielināsies (līdz limitam), bet to uzlādes laiks samazināsies",
               ],
             },
           },
@@ -1748,17 +1871,16 @@ export const macibas = [
             type: "Title",
             children: "Secinājumi un darba analīze:",
           },
+
           {
-            type: "Title",
-            children: "Rezultātu analīze",
-          },
-          {
-            type: "Title",
-            children: "Eksperimenta izvērtēšana",
-          },
-          {
-            type: "Title",
-            children: "Secinājumi",
+            type: "Text",
+            props: {
+              text: [
+                "Eksperiments tika veikts veiksmīgi, tika iegūti skaidri rezultāti. praktiski iegūtie rezultāti sakrīt ar teorētiski aprēķinātiem (nosacīti lielā kļūdu robežā) rezultātiem, tomēr tie apstiprina hipotēzi, un sakrīt ar informācijas avotos nolasīiem datiem (kļūdu robežā).",
+
+                "Lai uzlabotu eksperimenta ticamību un efektivitāti, būtu vēlams lietot aprīkojumu ar lielāku precizitāti. Šis eksperiments var ciest no neprecīzām mērierīcēm, kas var ietekmēt iegūto datu precizitāti. Turklāt klases apstākļi var ietekmēt arī rezultātus, kas tiek iegūti skolas klasē. Mēs uzskatām, ka eksperimenta precizitāti ierobežo ievākto datu daudzums, kas, šajā gadījumā, neļāva pilnīgi precīzi attēlot eksperimentā notiekošo grafikā. Lai iegūtie rezultāti būtu precīzāki, mums jāpalielina mērijumu skaits.",
+              ],
+            },
           },
         ],
       },
@@ -2007,12 +2129,64 @@ export const macibas = [
             children: "Rezultātu analīze",
           },
           {
+            type: "Text",
+            props: {
+              text: [
+                "1. daļa:",
+                "Nosakot Ampēra spēka atkarību no strāvas stipruma, tabulā ir redzams, ka jo lielāks ir strāvas stiprums, jo lielāks ir Ampēra spēks. Šis rezultāts ir saskaņā ar Ampēra likumu, kas nosaka, ka magnētiskais lauks vada apkārtnē ir proporcionāls strāvas stiprumam, tādējādi palielinot strāvas stiprumu, palielinās arī spēks, ar kuru magnētiskais lauks iedarbojas uz vadiem.",
+                "2. daļa:",
+                "Nosakot Ampēra spēka atkarību no vada garuma, tabulā ir redzams, ka jo lielāks ir vada garums, jo mazāks ir Ampēra spēks. Šis rezultāts ir saskaņā ar Ampēra likumu, kas nosaka, ka magnētiskais lauks vada apkārtnē ir proporcionāls vada garumam. Tādējādi, palielinot vada garumu, magnētiskais lauks vada apkārtnē samazinās un tādējādi samazinās arī spēks, ar kuru magnētiskais lauks iedarbojas uz vadiem.",
+              ],
+            },
+          },
+          {
             type: "Title",
             children: "Eksperimenta izvērtēšana",
           },
           {
+            type: "Text",
+            props: {
+              text: ["Trūkumi un ierobežojumi:"],
+            },
+          },
+          {
+            type: "OList",
+            props: {
+              data: [
+                "Eksperiments tika veikts tikai ar vienu veidu vadiem, kas nozīmē, ka iegūtie rezultāti var attiekties tikai uz šo veidu vadiem vai būt ierobežojoši.",
+                "Nav ņemta vērā temperatūras un sprieguma ietekme uz eksperimentu, kas varētu ietekmēt iegūtos datus.",
+                "Nepilnīga mērīšanas precizitāte varēja ietekmēt iegūtos datus (cilvēka kļūda).",
+              ],
+            },
+          },
+          {
+            type: "Text",
+            props: {
+              text: ["Ierosinātie uzlabojumi:"],
+            },
+          },
+          {
+            type: "OList",
+            props: {
+              data: [
+                "Veikt eksperimentu ar dažāda veida vadiem, lai iegūtu universālus rezultātus.",
+                "Lai iegūtu plašāku priekšstatu par eksperimentālo situāciju, būtu jāņem vērā arī citi parametri, piemēram, temperatūra un mitrums.",
+                "Veikt vairākus mērījumus: lai nodrošinātu precīzus rezultātus, būtu vēlams veikt vairākus mērījumus un iegūtos datus vidējot.",
+                "Iegādāties precīzākas mērījumu iekārtas: pamatojoties uz eksperimenta iegūtajiem rezultātiem, varētu būt ieteicams iegādāties precīzākas mērījumu iekārtas.",
+              ],
+            },
+          },
+          {
             type: "Title",
             children: "Secinājumi",
+          },
+          {
+            type: "Text",
+            props: {
+              text: [
+                "Pētījums apstiprina, ka Ampēra spēks ir tieši proporcionāls strāvas stiprumam, bet nepārtraukti samazinās, kad vads kļūst garāks vai masa palielinās. Šie secinājumi var būt noderīgi elektrotehnikas un fizikas jomās, kur tiek izmantotas elektriskās strāvas un vadi. Hipotēze ir apstiprinājās, un rezultāti atbilst teorētiskajai hipotēzei un likumiem, kas apraksta Ampēra spēku un vada pretestību.",
+              ],
+            },
           },
         ],
       },
